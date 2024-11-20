@@ -104,6 +104,8 @@ To install npm: run `npm install npm@latest -g` in your terminal
    ```
    Tests are run using Jest and Supertest for API endpoint validation. 
 
+☺ I hope you enjoy testing my server ☺
+
 ## **Technology**
 
 - **Node.js**: JavaScript runtime for building the backend.
@@ -129,5 +131,3 @@ To install npm: run `npm install npm@latest -g` in your terminal
 - `"nodemon": "^3.1.7",`
 - `"pg": "^8.13.0",`
 - `"pg-format": "^1.0.4"`
-
-☺ I hope you enjoy testing my server ☺
