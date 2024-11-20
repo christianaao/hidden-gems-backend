@@ -72,11 +72,11 @@ To install npm: run `npm install npm@latest -g` in your terminal
 
 4. To connect to the databases locally, create two dotenv files:
 
-- .env.development:
+  .env.development:
   ```makefile
   PGDATABASE=hidden_gems 
   ```
-- .env.test:
+  .env.test:
   ```makefile
   PGDATABASE=hidden_gems_test 
   ```
