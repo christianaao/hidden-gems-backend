@@ -60,9 +60,9 @@ To install npm: run `npm install npm@latest -g` in your terminal
    git clone https://github.com/christianaao/hidden-gems-backend
    ```
 
-2. In the cloned directory, type `npm install` in your terminal to install all dependencies.
+3. In the cloned directory, type `npm install` in your terminal to install all dependencies.
 
-3. Enter the following Dev-Dependency Scripts into your packet.json file:
+4. Enter the following Dev-Dependency Scripts into your packet.json file:
     - "setup-dbs": "psql -f ./db/setup.sql",
     - "seed": "node ./db/seeds/run-seed.js",
     - "test": "jest",
@@ -70,42 +70,41 @@ To install npm: run `npm install npm@latest -g` in your terminal
     - "start": "node listen.js",
     - "seed-prod": "NODE_ENV=production npm run seed"
 
-4. To connect to the databases locally, create two dotenv files:
+5. To connect to the databases locally, create two dotenv files:
+   .env.development:
+   ```makefile
+   PGDATABASE=hidden_gems
+   ```
+   .env.test:
+   ```makefile
+   PGDATABASE=hidden_gems_test
+   ```
 
-  .env.development:
-  ```makefile
-  PGDATABASE=hidden_gems 
-  ```
-  .env.test:
-  ```makefile
-  PGDATABASE=hidden_gems_test 
-  ```
-
-5. To create the necessary databases, run:
+6. To create the necessary databases, run:
    ```bash
    npm run setup-dbs  
    ```
    These files should point to your local PostgreSQL databases for development and testing environments.
 
-6. Populate the development database with initial data by running:
+7. Populate the development database with initial data by running:
    ```bash
    npm run seed  
    ```
    Ensure that the database is correctly seeded before running any tests.
 
-7. To start the application locally, run:
+8. To start the application locally, run:
    ```bash
    npm start  
    ```
    This will start the Express server on your local machine. _Please see `endpoints.json` for all available endpoints_
 
-8. To run the test suite and verify the application’s functionality, run:
+9. To run the test suite and verify the application’s functionality, run:
    ```bash
    npm test  
    ```
    Tests are run using Jest and Supertest for API endpoint validation. 
 
- ## **Technology**
+## **Technology**
 
 - **Node.js**: JavaScript runtime for building the backend.
 - **Express**: Web framework for handling routing and HTTP requests.
