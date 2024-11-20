@@ -8,7 +8,7 @@
      * [**Database Setup**](#database-setup)
      * [**Installation**](#installation)
 - [**Technology**](#technology)
-- [**Dependencies and Software Requirements**](#dependencies-and-softwares-requirements)
+- [**Dependencies and Software Requirements**](#dependencies-and-software-requirements)
      * [**Dev Dependencies**](#dev-dependencies)
      * [**Dependencies**](#dependencies)
 
