@@ -49,9 +49,9 @@ Original Repo Link: https://github.com/flynnjim/hidden-gems-frontend <br>
 ## Running This Project Locally
 ### Database Setup
 
-To set up PostgreSQL on your system, follow this guide: [Install PostgreSQL](https://www.w3schools.com/postgresql/postgresql_install.php)
+To set up PostgreSQL on your system, please follow this guide: [Install PostgreSQL](https://www.w3schools.com/postgresql/postgresql_install.php)
 
-To install npm: run `npm install npm@latest -g` un your terminal
+To install npm: run `npm install npm@latest -g` in your terminal
 
 ### Installation
 
