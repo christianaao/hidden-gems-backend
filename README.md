@@ -51,7 +51,7 @@ Original Repo Link: https://github.com/flynnjim/hidden-gems-frontend <br>
 
 To set up PostgreSQL on your system, please follow this guide: [Install PostgreSQL](https://www.w3schools.com/postgresql/postgresql_install.php)
 
-To install npm: run `npm install npm@latest -g` in your terminal
+To install pnpm: Ensure that you have Node.js installed. Then run `npm install -g pnpm@latest-10` in your terminal. For detailed instructions, or if you do not have Node.js installed, please follow this guide: https://pnpm.io/installation
 
 ### Installation
 
@@ -60,15 +60,16 @@ To install npm: run `npm install npm@latest -g` in your terminal
    git clone https://github.com/christianaao/hidden-gems-backend
    ```
 
-3. In the cloned directory, type `npm install` in your terminal to install all dependencies.
+3. In the cloned directory, type `pnpm install` in your terminal to install all dependencies.
 
 4. Enter the following Dev-Dependency Scripts into your packet.json file:
+    - "preinstall": "npx only-allow pnpm
     - "setup-dbs": "psql -f ./db/setup.sql",
     - "seed": "node ./db/seeds/run-seed.js",
     - "test": "jest",
     - "prepare": "husky install",
     - "start": "node listen.js",
-    - "seed-prod": "NODE_ENV=production npm run seed"
+    - "seed-prod": "NODE_ENV=production pnpm run seed"
 
 5. To connect to the databases locally, create two dotenv files:
    .env.development:
@@ -82,25 +83,25 @@ To install npm: run `npm install npm@latest -g` in your terminal
 
 6. To create the necessary databases, run:
    ```bash
-   npm run setup-dbs  
+   pnpm setup-dbs  
    ```
    These files should point to your local PostgreSQL databases for development and testing environments.
 
 7. Populate the development database with initial data by running:
    ```bash
-   npm run seed  
+   pnpm run seed  
    ```
    Ensure that the database is correctly seeded before running any tests.
 
 8. To start the application locally, run:
    ```bash
-   npm start  
+   pnpm start  
    ```
    This will start the Express server on your local machine. _Please see `endpoints.json` for all available endpoints_
 
 9. To run the test suite and verify the application’s functionality, run:
    ```bash
-   npm test  
+   pnpm test  
    ```
    Tests are run using Jest and Supertest for API endpoint validation. 
 
