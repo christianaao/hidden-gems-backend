@@ -51,7 +51,7 @@ Original Repo Link: https://github.com/flynnjim/hidden-gems-frontend <br>
 
 To set up PostgreSQL on your system, please follow this guide: [Install PostgreSQL](https://www.w3schools.com/postgresql/postgresql_install.php)
 
-To install pnpm: Ensure that you have Node.js installed. Then run `npm install -g pnpm@latest-10` in your terminal. For detailed instructions, or if you do not have Node.js installed, please follow this guide: https://pnpm.io/installation
+To install pnpm: Ensure that you have Node.js (at least v18.12) installed. Then run `npm install -g pnpm@latest-10` in your terminal. For detailed instructions, or if you do not have Node.js installed, please follow this guide: https://pnpm.io/installation
 
 ### Installation
 
