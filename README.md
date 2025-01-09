@@ -20,7 +20,7 @@ The backend is built with PostgreSQL, node-postgres and Node.js, using the Expre
 
 ## Project Links
 
-Backend API: https://hidden-gems-cd0h.onrender.com/api <br>
+Backend API: https://hidden-gems-project.onrender.com/api <br>
 Backend Repo: https://github.com/christianaao/hidden-gems-backend <br>
 Original Repo Link: https://github.com/espiers13/hidden-gems <br>
 
